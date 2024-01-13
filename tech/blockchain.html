@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Coin Halal - Apa itu Blockchain?</title>
+    <meta name="description" content=" Koin Kripto Halal, Bitcoin halal, Ethereum halal, list crypto halal, aset crypto halal, apakah cryptocurrency halal?, apakah mata uang kripto halal ">
+    <link rel="stylesheet" href="/static/theme.css">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/content/static/favicon.ico" type="image/x-icon">
+    <link id="theme-stylesheet" rel="stylesheet" href="/static/light-theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=1445513425665109" nonce="V4SvA3yH"></script>
+
+
+    <!-- Theme toggle icon -->
+    <div class="theme-toggle">
+        <i id="theme-icon" class="bi bi-moon" onclick="toggleTheme()"></i> <!-- Bootstrap Icons are used here -->
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/pages/about.html">Tentang Situs Ini</a>
+                    <a class="nav-item nav-link" href="/pages/crypto_haram.html">Crypto Haram?</a>
+                    <a class="nav-item nav-link" href="/pages/analis.html">Analis</a>
+                    <a class="nav-item nav-link" href="https://forms.gle/yn4o368bneqkx3AKA" target="_blank">Permintaan Analisis</a>
+                    <a class="nav-item nav-link" href="/pages/contact_donation.html">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Custom script to toggle theme -->
+    <script>
+        function toggleTheme() {
+            var themeStylesheet = document.getElementById('theme-stylesheet');
+            var themeIcon = document.getElementById('theme-icon');
+            var body = document.body;
+            var navbar = document.querySelector('.navbar'); // Add this line to select the navbar
+
+            if (themeStylesheet.getAttribute('href') == '/static/light-theme.css') {
+                themeStylesheet.setAttribute('href', '/static/dark-theme.css');
+                themeIcon.classList.remove('bi-moon');
+                themeIcon.classList.add('bi-sun');
+                body.classList.add('dark-theme');
+                navbar.classList.remove('navbar-light', 'bg-light'); // Remove light theme classes
+                navbar.classList.add('navbar-dark', 'bg-dark'); // Add dark theme classes
+            } else {
+                themeStylesheet.setAttribute('href', '/static/light-theme.css');
+                themeIcon.classList.remove('bi-sun');
+                themeIcon.classList.add('bi-moon');
+                body.classList.remove('dark-theme');
+                navbar.classList.remove('navbar-dark', 'bg-dark'); // Remove dark theme classes
+                navbar.classList.add('navbar-light', 'bg-light'); // Add light theme classes
+            }
+        }
+
+
+    </script>
+
+
+    <div class="container mt-4">
+    <h1>Apa itu Blockchain?</h1>
+    
+
+    <hr>
+<h2>Pengertian Blockchain</h2>
+<p>Blockchain adalah teknologi penyimpanan data digital yang <a href="centralized-vs-decentralized.html">distribusi dan tidak terpusat</a>. Ini seperti buku besar yang merekam transaksi atau informasi lainnya secara kronologis dan aman. Setiap 'blok' data terhubung ke blok sebelumnya, membentuk 'rantai', yang <a href="immutable-blockchain.html">hampir mustahil untuk diubah atau dihack</a>.</p>
+<p><img alt="Distributed Public Ledger" src="/static/distributed_public_ledger.png"></p>
+<h3>Mengapa Kita Membutuhkan Blockchain?</h3>
+<ol>
+<li><strong>Transparansi</strong>: Blockchain menyediakan transparansi dalam transaksi atau pertukaran informasi. Semua orang bisa melihat transaksi dari semua wallet, dari ke siapa, berapa jumlahnya. Akan tetapi kita tetap tidak bisa tahu itu wallet punya siapa kecuali kalau pemiliknya yang memberikan info. </li>
+<li><strong>Keamanan</strong>: Data dalam blockchain tersebar di jaringan komputer (lihat gambar diatas: distributed public ledger), membuatnya sangat sulit untuk diretas atau dimanipulasi. Semua copian public ledgernya itu di distribusikan ke semua node/<a href="mining.html">miners</a>/<a href="staking.html">validators</a>. Siapapun juga bisa menjadi node/<a href="mining.html">miners</a>/<a href="staking.html">validators</a>.</li>
+<li><strong>Efisiensi</strong>: Mengurangi kebutuhan akan perantara, seperti bank atau agen, dalam transaksi.</li>
+</ol>
+<h3>Logika Sederhana Tentang Blockchain</h3>
+<p>Bayangkan blockchain sebagai buku harian. Setiap halaman buku harian adalah blok yang berisi catatan transaksi atau informasi. Ketika halaman penuh, ia disegel dan dikaitkan dengan halaman berikutnya, membentuk rantai informasi yang terus bertambah. Semua data ini didistribusikan ke seluruh anggota jaringan sehingga tidak ada yang bisa merubah informasi di halaman yang sudah disegel tanpa mengubah seluruh buku.</p>
+<h3>Bagaimana Blockchain Akan Mengubah Dunia</h3>
+<ol>
+<li><strong>Keuangan</strong>: Transaksi menjadi lebih cepat dan murah dan berlaku global tanpa ada sekat negara, transaksi tanpa perlu bank sebagai perantara. Bisa dilakukan kapan saja 24 jam, 7 hari, settlement langsung instance tanpa ada intervensi manusia.</li>
+<li><strong>Identitas Digital</strong>: Memberikan cara yang lebih aman dan tidak dapat dipalsukan untuk mengelola identitas digital.</li>
+<li><strong>Supply Chain</strong>: Meningkatkan transparansi dan efisiensi dalam rantai pasokan.</li>
+<li><strong>Voting</strong>: Menawarkan metode pemungutan suara yang lebih aman dan tidak dapat dipalsukan.</li>
+</ol>
+<p>Blockchain bukan hanya tentang cryptocurrency, tetapi tentang membangun dasar kepercayaan digital yang lebih kuat dan efisien, merubah banyak aspek kehidupan kita sehari-hari.</p>
+
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        var links = document.getElementsByTagName('a');
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].hostname !== window.location.hostname) {
+                links[i].target = '_blank';
+            }
+        }
+    });
+</script>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <div class="fb-comments" data-href="https://cryptocoinhalal.com/" data-width="100%" data-numposts="5" style="margin: auto;"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Coin Halal - Apa itu Proof of Staked Authority (PoSA)?</title>
+    <meta name="description" content=" Koin Kripto Halal, Bitcoin halal, Ethereum halal, list crypto halal, aset crypto halal, apakah cryptocurrency halal?, apakah mata uang kripto halal ">
+    <link rel="stylesheet" href="/static/theme.css">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/content/static/favicon.ico" type="image/x-icon">
+    <link id="theme-stylesheet" rel="stylesheet" href="/static/light-theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=1445513425665109" nonce="V4SvA3yH"></script>
+
+
+    <!-- Theme toggle icon -->
+    <div class="theme-toggle">
+        <i id="theme-icon" class="bi bi-moon" onclick="toggleTheme()"></i> <!-- Bootstrap Icons are used here -->
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="/pages/about.html">Tentang Situs Ini</a>
+                    <a class="nav-item nav-link" href="/pages/crypto_haram.html">Crypto Haram?</a>
+                    <a class="nav-item nav-link" href="/pages/analis.html">Analis</a>
+                    <a class="nav-item nav-link" href="https://forms.gle/yn4o368bneqkx3AKA" target="_blank">Permintaan Analisis</a>
+                    <a class="nav-item nav-link" href="/pages/contact_donation.html">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Custom script to toggle theme -->
+    <script>
+        function toggleTheme() {
+            var themeStylesheet = document.getElementById('theme-stylesheet');
+            var themeIcon = document.getElementById('theme-icon');
+            var body = document.body;
+            var navbar = document.querySelector('.navbar'); // Add this line to select the navbar
+
+            if (themeStylesheet.getAttribute('href') == '/static/light-theme.css') {
+                themeStylesheet.setAttribute('href', '/static/dark-theme.css');
+                themeIcon.classList.remove('bi-moon');
+                themeIcon.classList.add('bi-sun');
+                body.classList.add('dark-theme');
+                navbar.classList.remove('navbar-light', 'bg-light'); // Remove light theme classes
+                navbar.classList.add('navbar-dark', 'bg-dark'); // Add dark theme classes
+            } else {
+                themeStylesheet.setAttribute('href', '/static/light-theme.css');
+                themeIcon.classList.remove('bi-sun');
+                themeIcon.classList.add('bi-moon');
+                body.classList.remove('dark-theme');
+                navbar.classList.remove('navbar-dark', 'bg-dark'); // Remove dark theme classes
+                navbar.classList.add('navbar-light', 'bg-light'); // Add light theme classes
+            }
+        }
+
+
+    </script>
+
+
+    <div class="container mt-4">
+    <h1>Apa itu Proof of Staked Authority (PoSA)?</h1>
+    
+
+    <hr>
+<h2>Proof of Staked Authority (PoSA) dalam Binance Smart Chain</h2>
+<p>Proof of Staked Authority (PoSA) adalah mekanisme konsensus yang digunakan oleh <a href="/crypto/bnb.html">Binance Smart Chain (BSC)</a>, menggabungkan elemen dari <a href="pos.html">Proof of Stake (PoS)</a> dan Proof of Authority (PoA).</p>
+<h3>Prinsip Kerja PoSA</h3>
+<ol>
+<li><strong>Validator</strong>: Dalam PoSA, validator dipilih berdasarkan jumlah stake dan reputasi mereka, bukan hanya kapasitas komputasi.</li>
+<li><strong>Staking dan Otoritas</strong>: Para validator staking aset digital mereka sebagai jaminan untuk berpartisipasi dalam proses validasi transaksi dan penciptaan blok.</li>
+<li><strong>Efisiensi</strong>: PoSA menawarkan efisiensi yang lebih baik dibandingkan <a href="pow.html">PoW</a>, serta mengurangi konsumsi energi.</li>
+</ol>
+<h3>Fitur Utama PoSA</h3>
+<ul>
+<li><strong>Transaksi Cepat dan Murah</strong>: BSC dengan PoSA menawarkan transaksi yang lebih cepat dan biaya transaksi yang lebih rendah.</li>
+<li><strong>Desentralisasi dan Keamanan</strong>: Walaupun lebih terpusat daripada jaringan PoW seperti <a href="/crypto/bitcoin.html">Bitcoin</a>, PoSA memberikan keseimbangan antara kecepatan, efisiensi, dan keamanan (ingat <a href="blockchain-trilemma.html">trilemma blockchain</a>).</li>
+</ul>
+
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        var links = document.getElementsByTagName('a');
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].hostname !== window.location.hostname) {
+                links[i].target = '_blank';
+            }
+        }
+    });
+</script>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <div class="fb-comments" data-href="https://cryptocoinhalal.com/" data-width="100%" data-numposts="5" style="margin: auto;"></div>
+</div>
+</body>
+</html>
