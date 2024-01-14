@@ -13,3 +13,15 @@ body.dark-theme {
 }
 
 
+
+.fb-comments-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.fb-comments {
+    width: 100%; /* Ensure that the plugin takes the full width of its container */
+    max-width: 550px; /* Optional: Set a max-width if needed */
+}
