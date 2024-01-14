@@ -320,14 +320,24 @@
         </div>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Add Bootstrap classes to all tables in the articles
-            var tables = document.querySelectorAll('.text-center table');
-            tables.forEach(function(table) {
-                table.classList.add('table', 'table-bordered', 'table-hover', 'mx-auto');
-            });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Add Bootstrap classes to all tables in the articles and wrap them for responsiveness
+        var tables = document.querySelectorAll('.text-center table');
+        tables.forEach(function(table) {
+            // Create a wrapper div for responsiveness
+            var wrapper = document.createElement('div');
+            wrapper.classList.add('table-responsive');
+            
+            // Add Bootstrap classes to the table
+            table.classList.add('table', 'table-bordered', 'table-hover');
+            
+            // Wrap the table with the responsive div
+            table.parentNode.insertBefore(wrapper, table);
+            wrapper.appendChild(table);
         });
-    </script>
+    });
+</script>
+
     </div>
 
     <!-- Bootstrap JS and dependencies -->
